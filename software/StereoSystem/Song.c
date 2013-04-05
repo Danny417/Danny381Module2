@@ -69,7 +69,11 @@ void setSongVolume(struct Song* this, float volume) {
 }
 
 void setSongPitch(struct Song* this, float pitch, int quality) {
-	setSoundPitch(this->sound, pitch, quality);
+	setSoundPitch(this->sound, (pitch * 0.01), quality);
+}
+
+void setSongPlaybackSpeed(struct Song* this, int speed) {
+	setSoundPlaybackSpeed(this->sound, (speed * 0.01));
 }
 
 void playSong(struct Song* this, float volume, int startTime, int loops) {
@@ -118,7 +122,7 @@ void stopSong(struct Song* this) {
  * @param this - Song to seek
  * @param position - Position to seek to in MilliSeconds
  */
-void seekSong(struct Song* this, unsigned int position) {
+void seekSong(struct Song* this, int position) {
 	seekSound( this->sound, position );
 }
 

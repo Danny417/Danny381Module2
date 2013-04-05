@@ -443,6 +443,24 @@ void playSongFromList(int song_id, int list_id) {
 	printf("play song %d from list %d\n", song_id, list_id);
 }
 
+// index 25
+void setPitch(int id, int pitch, int quality) {
+	if(db.songs[id] == NULL || id <= 0 || id > db.num_of_songs) return;
+	setSongPitch(db.songs[id], pitch, quality);
+}
+
+// index 26
+void setPlaybackSpeed(int id, int speed) {
+	if(db.songs[id] == NULL || id <= 0 || id > db.num_of_songs) return;
+	setSongPlaybackSpeed(db.songs[id], speed);
+}
+
+// index 27
+void reloadSongById(int id) {
+	if(db.songs[id] == NULL || id <= 0 || id > db.num_of_songs) return;
+	unloadSong(db.songs[id]);
+	loadSong(db.songs[id]);
+}
 
 void shuffle(int index) {
 	printf("Playlist %d is shuffled\n", index);

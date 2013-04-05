@@ -7,7 +7,7 @@
     <string name="printsong">Print Song on Debug</string>
     <string name="connect">Connect</string>
     <string name="clear">Clear</string>
-    <string name="menu_settings">Settings</string>
+    <string name="sound_mixer">Sound Mixer</string>
     <string name="title_activity_main">Stereo System</string>
     <string name="label_myip">My IP:</string>
     <string name="play">Play</string>
@@ -43,8 +43,17 @@
     <string name="delete_playlist">Delete Playlist</string>
     <string name="create_playlist">Create Playlist</string>
     <string name="modify_playlist_name">Modify Playlist Name</string>
-     <string name="shu">"shuffle "</string>
-     <string name="repeat">RepeatSong</string>
-     <string name="repeats">RpeatSong</string>
+	<string name="shu">"shuffle "</string>
+    <string name="repeat">RepeatSong</string>
+    <string name="repeats">RpeatSong</string>
+    <string name="MixerActivity">MixerActivity</string>
+    <string name="volume">Volume:</string>
+    <string name="pitch">Pitch:</string>
+    <string name="length">Length:</string>
+    <string name="playbackSpeed">Playback Speed:</string>
+    <string name="songName">Song Name</string>
+    <string name="SongPropertyActivity">Song Properties</string>
+    <string name="pitch_quality">Pitch Quality</string>
+     
     
 </resources>
